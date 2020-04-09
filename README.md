@@ -1,4 +1,4 @@
-# InPanel
+# RumPanel
 
 
 > The goal of this project is to make the easiest, fastest, and most painless way of Linux VPS management. This project has been forked from VPSMate since 11 Jan 2017 but changed a lot.
