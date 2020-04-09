@@ -60,7 +60,7 @@ class Install(object):
         self.listen_port = 8888
         self.username = 'admin'
         self.password = 'admin'
-        self.repository = 'https://github.com/inpanel/inpanel.git'
+        self.repository = 'https://github.com/rumpanel/rumpanel.git'
         self.branch = 'master'
         self.distname = self.dist[0].lower()
         self.sys_version = self.dist[1]
