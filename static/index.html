@@ -33,14 +33,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h3 class="modal-title">登录即将超时 !</h3>
+                    <h3 class="modal-title">Sắp hết thời gian đăng nhập</h3>
                 </div>
                 <div class="modal-body">
-                    <p>您的登录即将超时，是否保持登陆状态 ？</p>
+                    <p>Bạn sắp hết thời gian đăng nhập, tiếp tục chứ?</p>
                 </div>
                 <div class="modal-footer">
-                    <a class="btn btn-default" data-dismiss="modal" aria-hidden="true" href="#/logout">退出登录</a>
-                    <button class="btn btn-primary" onclick="$('#_authconfirm').modal('hide')" ng-click="_authrenew()">继续访问</button>
+                    <a class="btn btn-default" data-dismiss="modal" aria-hidden="true" href="#/logout">Đăng xuất</a>
+                    <button class="btn btn-primary" onclick="$('#_authconfirm').modal('hide')" ng-click="_authrenew()">Tiếp tục</button>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
         </div>
     </div>
 
-    <div class="well" style="width:300px; margin:100px auto auto;" ng-show="!navbar_loaded"><img src="images/loading.gif" style="margin-right:5px"> 正在加载，请稍候...</div>
+    <div class="well" style="width:300px; margin:100px auto auto;" ng-show="!navbar_loaded"><img src="images/loading.gif" style="margin-right:5px"> Đang tải, vui lòng đợi ...</div>
 
     <!--[if lte IE 6]>
     <script src="lib/ie6warning/warning.js"></script>
