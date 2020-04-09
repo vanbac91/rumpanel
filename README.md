@@ -3,56 +3,56 @@
 
 > The goal of this project is to make the easiest, fastest, and most painless way of Linux VPS management. This project has been forked from VPSMate since 11 Jan 2017 but changed a lot.
 
-Official Website: [inpanel.org](https://inpanel.org "InPanel")
+Official Website: [rumpanel.org](https://rumpane.org "rumpanel")
 
-Developer: [doudoudzj](https://github.com/doudoudzj "doudoudzj")
+Developer: [vanbac91](https://github.com/vanbac91 "vanbac91")
 
 #### Installation
 
 ```shell
 # stable version
-curl -O https://raw.githubusercontent.com/inpanel/inpanel/master/install.py
+curl -O https://raw.githubusercontent.com/vanbac91/rumpanel/master/install.py
 python install.py
 
 # beta version
-curl -O https://raw.githubusercontent.com/inpanel/inpanel/dev/install.py
+curl -O https://raw.githubusercontent.com/vanbac91/rumpanel/dev/install.py
 python install.py --dev
 ```
 
 #### Uninstall
 
 ```shell
-service inpanel stop
-rm -rf /usr/local/inpanel
-rm -f /etc/init.d/inpanel
+service rumpanel stop
+rm -rf /usr/local/rumpane
+rm -f /etc/init.d/rumpane
 ```
 
 #### Username and Password
 
 ```shell
-/usr/local/inpanel/config.py username 'your-username'
-/usr/local/inpanel/config.py password 'your-password'
+/usr/local/rumpane/config.py username 'your-username'
+/usr/local/rumpane/config.py password 'your-password'
 ```
 
 #### Features
 
-- 免费、简洁、开源
-- 快速在线安装、小巧且节省资源
-- 当前支持 CentOS/Redhat 5.4+、6.x、7.x、8.x
-- 基于发行版软件源的软件管理机制
-- 轻松构建 Linux + Nginx + MySQL + PHP 环境
-- 强大的在线文件管理和回收站机制
-- 快速创建和安装多种站点
-- 丰富实用的系统工具
+-Miễn phí, đơn giản và mã nguồn mở
+-Nhấp cài đặt trực tuyến, nhỏ và tiết kiệm tài nguyên
+-Cung cấp hỗ trợ CentOS / Redhat 5.4+, 6.x, 7.x, 8.x
+-Cơ chế quản lý phần mềm dựa trên nguồn phần mềm phân phối
+-Hãy xây dựng môi trường Linux + Nginx + MySQL + PHP
+-Quản lý tập tin và tái chế tập tin trực tuyến mạnh mẽ
+-Nhanh chóng tạo và cài đặt nhiều trang web
+-Rich và các công cụ hệ thống thực tế
 
-#### from VPSMate to InPanel
+#### from VPSMate to rumpanel
 
-本管理面板只是在 UI 层面对系统服务及功能进行管理配置，并不会在系统中生成多余的依赖及配置文件，不管 VPSMate 还是 InPanel，只是工具而已，卸载或安装，对系统已配置好的服务是没有影响的
+Bảng quản lý này chỉ quản lý và định cấu hình các dịch vụ và chức năng của hệ thống ở cấp UI và không tạo ra các tệp phụ thuộc và cấu hình dự phòng trong hệ thống. Không quan trọng VPSMate hay rumpane, nó chỉ là một công cụ, gỡ cài đặt hoặc cài đặt và định cấu hình dịch vụ cho hệ thống. Không có tác dụng
 
-~~现阶段两者使用同一个进程服务文件，所以**只需要卸载 VPSMate ，再安装 InPanel 即可**~~
+~ ~ Ở giai đoạn này, cả hai đều sử dụng cùng một tệp dịch vụ xử lý, vì vậy ** chỉ cần gỡ cài đặt VPSMate và cài đặt rumpane ** ~ ~
 
-从版本 v1.1.1b16 开始，不再使用 vpsmate 进程名，改用进程名为 intranet，在全新安装面板时，可以对已安装的 VPSMate 进行保留（或者删除）操作
+Bắt đầu từ phiên bản v1.1.1b16, tên quy trình vpsmate không còn được sử dụng và tên quy trình được đổi thành mạng nội bộ. Trong quá trình cài đặt bảng điều khiển mới, VPSMate đã cài đặt có thể được giữ lại (hoặc xóa).
 
-从版本 v1.1.1b18 开始，不再使用 intranet 进程名，改用进程名为 inpanel，统一标识为"inpanel"
+Bắt đầu từ phiên bản v1.1.1b18, tên quy trình mạng nội bộ không còn được sử dụng, tên quy trình là rumpane và nhận dạng hợp nhất là "rumpane"
 
-> 希望你用得愉快 ！
+> Tôi hy vọng bạn có một thời gian tốt!
